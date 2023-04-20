@@ -1,0 +1,260 @@
+.el-login__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  background: url("~@AST/images/Login/login-bg.png") no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+  .switch_bar {
+    position: absolute;
+    right: 52px;
+    top: 36px;
+    width: 114px;
+
+    :deep(.el-input__inner) {
+      box-shadow: 0px 1px 10px #54b0f8;
+      text-align: center;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      user-select: none;
+      border: none;
+      color: #fff;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #1b6aed, #54b0f8);
+    }
+
+    :deep(.el-input .el-select__caret) {
+      color: #fff;
+    }
+  }
+
+  .login-contain {
+    width: 100%;
+    height: calc(100% - 66px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 66px;
+    flex-direction: column;
+
+    .login-content {
+      text-align: center;
+      width: 555px;
+      height: 410px;
+      margin-top: -60px;
+
+      // logo样式
+      .system-logo {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 36px;
+        position: relative;
+        margin-left: -2px;
+
+        :deep(img) {
+          width: auto;
+          max-height: 47px;
+        }
+      }
+
+      .layui-system-icon {
+        display: inline-block;
+        width: 300px;
+        height: 39px;
+        background-position: 1px 2px;
+        background: no-repeat url("~@AST/images/Login/login_bg_logo.png") center;
+      }
+
+      //系统名称
+      div.system-name {
+        position: relative;
+        display: inline-block;
+
+        span.version {
+          position: absolute;
+          right: -38px;
+          font-size: 12px;
+          font-weight: 600;
+          top: -22px;
+          display: block;
+          padding: 0 2px;
+          border: 1px solid #194bd8;
+          color: #194bd8;
+          border-radius: 5px;
+          transform: skew(-10deg);
+        }
+
+        div.name {
+          text-align: center;
+          margin-bottom: 46px;
+        }
+
+        div.name .name-zn.name-zn-auth,
+        div.name > .name-zn-auth,
+        div.name.authority-logo > .name-zn-system {
+          display: none;
+        }
+
+        div.name.authority-logo > .name-zn-auth {
+          display: inline-block;
+        }
+
+        div.name .name-zn,
+        .authority-logo {
+          color: #194bd8;
+          font-family: "方正兰亭中黑";
+          display: block;
+        }
+
+        div.name .name-zn.name-zn-main {
+          font-size: 36px;
+          margin-bottom: 6px;
+        }
+
+        div.name .name-zn.name-zn-sb {
+          font-size: 28px;
+        }
+      }
+
+      .login-form {
+        width: 454px;
+        text-align: center;
+        margin: 2px auto;
+
+        .login-box-title {
+          font-size: 22px;
+          line-height: 1;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          margin-bottom: 45px;
+        }
+
+        .el-form {
+          width: 380px;
+          margin: auto;
+
+          .el-form-item {
+            i.icon-password,
+            i.icon-user {
+              margin-bottom: 25px;
+              line-height: 44px;
+              padding: 0 8px;
+              font-size: 18px;
+            }
+
+            :deep(.el-input__inner) {
+              height: 44px;
+              line-height: 44px;
+              background: #fff;
+              border: 1px solid #dbdcdc;
+              padding-left: 46px;
+            }
+
+            :deep(.login-button) {
+              margin-top: 0;
+            }
+
+            :deep(.el-input--large) .el-input__icon {
+              font-size: 18px;
+              width: 40px;
+              line-height: 44px;
+            }
+
+            :deep(.el-input--large) .el-input__icon.el-icon-visibility {
+              font-family: "iconfont" !important;
+
+              &:before {
+                content: "\e60e";
+              }
+            }
+
+            :deep(.el-input--large) .el-input__icon.el-icon-visibility-off {
+              font-family: "iconfont" !important;
+
+              &:before {
+                content: "\e60f";
+              }
+            }
+          }
+        }
+
+        .login-button {
+          position: relative;
+          height: 44px;
+          width: 380px;
+          line-height: 42px;
+          background: linear-gradient(to bottom, #3bb1ff 00%, #3c83ff);
+          margin-bottom: 25px;
+          line-height: 42px;
+
+          img {
+            vertical-align: middle;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
+
+        .login-button.unverify {
+          img.common-img {
+            position: absolute;
+            top: 2px;
+            left: 112px;
+            width: 40px;
+            height: 40px;
+          }
+
+          span {
+            color: #fff;
+            padding-left: 34px;
+            line-height: 42px;
+          }
+        }
+
+        .login-button.failed {
+          border: 1px solid #ed3434;
+          background: #f8f8f8;
+
+          img.failed-img {
+            margin-right: 10px;
+            width: 26px;
+            height: 26px;
+            box-shadow: #ed3434 0px 0px 5px;
+            border-radius: 50%;
+          }
+
+          span {
+            color: #ed3434;
+          }
+        }
+
+        .canvas-img {
+          img {
+            position: absolute;
+            top: 14px;
+            cursor: pointer;
+            width: 45px;
+          }
+
+          canvas {
+            background: #ecf7ff;
+            border: 1px solid #6fc6ff;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      .banner {
+        right: -150px;
+      }
+    }
+  }
+}

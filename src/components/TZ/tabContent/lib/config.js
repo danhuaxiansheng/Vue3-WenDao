@@ -1,0 +1,4 @@
+const baseConfig = {
+
+}
+export { baseConfig }

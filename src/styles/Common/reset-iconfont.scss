@@ -1,0 +1,42 @@
+@mixin iconFont {
+    font-family: "iconfont" !important;
+}
+
+.el-icon-add-circle-filled {
+    @include iconFont;
+
+    &:before {
+        content: "\e60f";
+    }
+}
+
+.el-icon-customize-filled {
+    @include iconFont;
+
+    &:before {
+        content: "\e608";
+    }
+}
+
+.el-icon-fx {
+    @include iconFont;
+
+    &:before {
+        content: "\e611";
+    }
+}
+
+.el-icon-date {
+    @include iconFont;
+    font-size: 16px !important;
+    top: 3px !important;
+
+    &:before {
+        content: "\e74b";
+    }
+}
+
+i.iconfont.icon-refresh:before {
+    position: static;
+    background-image: none;
+}

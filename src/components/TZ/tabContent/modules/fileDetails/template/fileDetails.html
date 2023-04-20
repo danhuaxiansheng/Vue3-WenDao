@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%">
+<head>
+    <title>分析报告</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="height:100%;width: 100%;overflow: hidden;">
+    <!--内容-->
+    <iframe id="content" style="width:100%;height:100%;border: none;">
+    </iframe>
+    <noscript><iframe src="*.html"></iframe></noscript>
+    <script charset="utf-8">
+        var commonKeys = window.localStorage.getItem('commonKeys'),
+            commonKeys = JSON.parse(commonKeys),
+            auth = commonKeys.auth;
+
+        window.onload = function () {
+            layui.use(['layer'], function () {
+                window.layer = layui.layer;
+                var rowkey = GetQueryString('rowkey'),
+                    fileName = GetQueryString('fileName'),
+                    url = GetQueryString('url'),
+                    tableName = GetQueryString('tableName'),
+                    column = GetQueryString('column'),
+                    indexName = GetQueryString('indexName'),
+                    ids = GetQueryString('ids'),
+                    fileid = GetQueryString('fileid'),
+                    type = GetQueryString('type'),
+                    condition;
+                tableName == null && (tableName = "inf-file");
+                column == null && (column = "reportjsonfile");
+
+                condition = {
+                    tableName: tableName,
+                    column: column,
+                    rowkey: rowkey,
+                    indexName: indexName,
+                    indexId: ids,
+                    fileId: fileid,
+                    isDownload: false
+                };
+                type !== null && (condition.type = 2);
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'json',
+                    data: condition,
+                    beforeSend: function (xhr, settings) {
+                        settings.url = getJumpParam(settings.url, settings.data)
+                    },
+                    success: function (data) {
+                        // 态势分析中心 动态加载
+                        if (type !== null)
+                            $('<link>').attr({ rel: 'stylesheet', type: 'text/css', href: '../../../../../../Areas/TZ/Content/SituationCenter/SituationWarn/TZ.SituationCommon.css' }).appendTo('head');
+
+                        var emailBodyIframe = $('#content')[0].contentWindow;
+                        if (data.status === 200) {
+                            emailBodyIframe.document.write(data.data);
+                            // 绑定事件
+                            var exportFile = emailBodyIframe.document.getElementById('export'),
+                                releaseFile = emailBodyIframe.document.getElementById('release');
+
+                            $(releaseFile).unbind('click').click(function () {
+                                // 下载释放文件
+                                downRelease(url, indexName, ids, type);
+                            })
+
+                            $(exportFile).unbind('click').click(function () {
+                                var conditions = {
+                                    fileType: 'html',
+                                    action: url,
+                                    tableName: tableName,
+                                    column: column,
+                                    rowkey: rowkey,
+                                    indexName: indexName,
+                                    indexId: ids,
+                                     fileId: fileid,
+                                    isDownload: true,
+                                    fileName: fileName
+                                };
+                                type !== null && (conditions.type = 2);
+                                // 下载分析报告
+                                Uis().ui.exporter(conditions);
+                            })
+                            emailBodyIframe.document.close();
+                        } else {
+                            emailBodyIframe.document.write(data.msg);
+                            emailBodyIframe.document.close();
+                        }
+                    }
+                });
+            })
+        }
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
+                hrefParam = window.location.search.substr(1).match(reg);
+            if (hrefParam != null) return unescape(hrefParam[2]); return null;
+        }
+
+        // 下载释放文件
+        function downRelease(url, indexName, ids, type) {
+            var releaseUrl = url.split('file')[0],
+                params = {
+                    indexName: indexName,
+                    ids: ids
+                },
+                conditions = {
+                    tableName: 'inf-file',
+                    column: 'releasefile',
+                    rowKeyField: 'sha256',
+                    fileName: 'filename',
+                    params: JSON.stringify(params),
+                    exist: true,
+                    defaultType: 'zip'
+                };
+            type !== null && (conditions.type = 2);
+            com.safeVerify(() => {
+                $.ajax({
+                    url: releaseUrl + 'file/download',
+                    type: 'post',
+                    dataType: 'json',
+                    data: conditions,
+                    beforeSend: function (xhr, settings) {
+                        settings.url = getJumpParam(settings.url, settings.data)
+                    },
+                    success: function (res) {
+                        var isDown = true;
+                        if (res.status !== 200) {
+                            isDown = false;
+                            window.layer.msg('无释放文件！', { icon: 2, time: 2000 });
+                        }
+                        isDown && Uis().ui.exporter({
+                            action: releaseUrl + 'file/download',
+                            key: res.data
+                        }, false);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+//sip/dip/ip的资产标识
+.element-ip__tag{
+    display: flex;
+    align-items: center;
+    .icon-vps{
+        color:$yellow;
+    }
+    .icon-money{
+        cursor: pointer;
+        color: $highColor;
+    }
+}
+.element-task__state{
+    @include flexCenter($justify:flex-start);
+    > i {
+       font-size: 16px;
+       margin-right: 4px;
+    }
+    // 不分析
+    .el-icon-remove-circle-filled{
+        color: $lightColor;
+    }
+    // 等待分析
+    .el-icon-time-filled{
+        color:$yellow;
+    }
+    // 正在分析
+    .el-icon-loading{
+        color: $highColor;
+    }
+    // 分析失败
+    .el-icon-error{
+        color: $dangerColor;
+    }
+    // 分析完成
+    .el-icon-success{
+        color: $successColor;
+    }
+}

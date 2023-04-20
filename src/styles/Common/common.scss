@@ -1,0 +1,160 @@
+#app {
+    position: relative;
+    height: 100%;
+    font-family: 'Microsoft YaHei';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DADADA;
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:vertical,
+::-webkit-scrollbar-track-piece {
+    background-color: #F1F1F1;
+}
+.element-page__scroll {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+// 清除缓存
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+// 高度100%的容器
+.element-container__full {
+    height: 100%;
+    padding: 16px;
+    background-color: $bgUnderBg;
+}
+.element-page__content {
+    height: 100%;
+    width: 100%;
+}
+// 鼠标hover手型
+.pointer {
+    cursor: pointer;
+}
+
+// 省略号样式
+.ellipsis {
+    @include ellipsis;
+}
+.element-card__style{
+    @include cardStyle;
+}
+
+//svg图标默认样式
+svg.icon {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+// 表格操作按钮样式
+.element-table__button {
+    border: none;
+    background: transparent;
+    padding: 0 8px;
+    .iconfont {
+        margin-right: 2px;
+    }
+    > span {
+        @include flexCenter;
+    }
+    &.active{
+        color: $highColor;
+        >span{color: $highColor;}
+        .iconfont {
+            color: $highColor;
+        }
+    }
+    &.is-disabled{
+        background-color: transparent;
+    }
+    &+.el-button{
+        margin-left: 0;
+    }
+}
+@font-face {
+    font-family: "QuartzBold";
+    src: url("~@AST/font/Quartz-Bold.otf") format("opentype");
+}
+// Echarts提示框样式
+div[_echarts_instance_]>div:nth-child(2) {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #fff !important;
+    color: $mainColor !important;
+    span {
+        font-weight: normal !important;
+    }
+    .tooltip .tooltip-title {
+        margin-bottom: 4px;
+    }
+    .tooltip p:first-child {
+        font-weight: bold;
+    }
+    .tooltip p:not(:first-child),
+    .tooltip p:not(:first-child) em {
+        font-size: 12px !important;
+    }
+    .tooltip li {
+        display: flex;
+        align-items: center;
+    }
+    .tooltip li b {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        background-color: $dangerColor;
+    }
+    .tooltip .tooltip-title__apt,
+    .tooltip .tooltip-title__apt em {
+        color: $dangerColor;
+    }
+}
+
+// .el-tooltip__popper.is-dark {
+//     background: #fff;
+//     @include border;
+//     .popper__arrow{
+//         border-width: 6px;
+//         @include border;
+//     }
+//     .popper__arrow,
+//     .popper__arrow:after {
+//         position: absolute;
+//         display: block;
+//         width: 0;
+//         height: 0;
+//         border-color: transparent;
+//         border-style: solid;
+//     }
+// }
+
+// 解决弹窗没有append-to-body时body右侧出现的8像素padding值的BUG
+body.el-popup-parent--hidden {
+    padding-right: 0 !important;
+}

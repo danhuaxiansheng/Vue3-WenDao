@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+div,
+span {
+    // -moz-user-select: none;
+    // -webkit-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
+    outline: none;
+}
+
+html,
+body {
+    min-width: 1440px;
+    min-height: 770px;
+    height: 100%;
+    line-height: normal;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}

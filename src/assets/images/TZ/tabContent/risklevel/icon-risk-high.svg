@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>编组 36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="45.2771505%" y1="42.6541646%" x2="13.4172567%" y2="14.0181224%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E7414C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.5450541%" y1="23.3075968%" x2="29.3590881%" y2="7.3452463%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E53E4A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M16,-3.51718654e-13 L29.1428571,4 L29.1428571,17.7964741 C29.1428571,23.0215486 26.0493389,27.7390172 21.2835169,29.8305848 L20.9834884,29.9578695 L16,32 L11.0165116,29.9578695 C6.18162715,27.9766338 2.98943777,23.325366 2.86115802,18.1223612 L2.85714286,17.7964741 L2.85714286,4 L16,-3.51718654e-13 Z M16,1.568 L4.357,5.111 L4.357,17.7964741 C4.357,22.4189195 7.09015471,26.5929135 11.3022926,28.4495613 L11.5852793,28.5698842 L16,30.379 L20.4147207,28.5698842 C24.6919783,26.8171525 27.517974,22.7055436 27.638822,18.1039523 L27.6428571,17.7964741 L27.642,5.111 L16,1.568 Z" id="path-3"></path>
+        <filter x="-26.6%" y="-15.6%" width="153.3%" height="143.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.840372279   0 0 0 0 0.0634127379   0 0 0 0 0.117936215  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-36">
+            <rect id="矩形" stroke-opacity="0" stroke="#979797" fill-opacity="0" fill="#D8D8D8" x="0.5" y="0.5" width="63" height="63"></rect>
+            <path d="M32,1 C14.8791728,1 1,14.8791728 1,32 C1,49.1208272 14.8791728,63 32,63 C49.1208272,63 63,49.1208272 63,32 C63,14.8791728 49.1208272,1 32,1 Z M32,3 C48.0162577,3 61,15.9837423 61,32 C61,48.0162577 48.0162577,61 32,61 C15.9837423,61 3,48.0162577 3,32 C3,15.9837423 15.9837423,3 32,3 Z" id="椭圆形" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <path d="M32,1 C14.8791728,1 1,14.8791728 1,32 C1,49.1208272 14.8791728,63 32,63 C49.1208272,63 63,49.1208272 63,32 C63,14.8791728 49.1208272,1 32,1 Z M32,3 C48.0162577,3 61,15.9837423 61,32 C61,48.0162577 48.0162577,61 32,61 C15.9837423,61 3,48.0162577 3,32 C3,15.9837423 15.9837423,3 32,3 Z" id="椭圆形" fill="url(#linearGradient-2)" fill-rule="nonzero" transform="translate(32.000000, 32.000000) scale(-1, -1) translate(-32.000000, -32.000000) "></path>
+            <circle id="椭圆形" fill="#EC414D" cx="32" cy="32" r="26"></circle>
+            <g id="编组-5备份" transform="translate(16.000000, 16.000000)">
+                <g id="盾牌、防御、防护备份">
+                    <g id="栅格系统备份-24" opacity="0" fill="#D8D8D8" fill-opacity="0">
+                        <rect id="背景层" stroke="#E0E0E0" x="0" y="0" width="32" height="32"></rect>
+                        <line x1="-4.05231404e-15" y1="32" x2="32" y2="0" id="路径-8" stroke="#E0E0E0" opacity="0.5"></line>
+                        <line x1="0" y1="0" x2="32" y2="32" id="路径-9" stroke="#E0E0E0" opacity="0.5"></line>
+                        <rect id="矩形（横）" stroke="#FF7D00" opacity="0.503762091" transform="translate(16.000000, 16.000000) rotate(90.000000) translate(-16.000000, -16.000000) " x="4.5" y="1.07142857" width="23" height="29.8571429"></rect>
+                        <rect id="方形" stroke="#FF7D00" opacity="0.503762091" x="2.78571429" y="2.78571429" width="26.4285714" height="26.4285714"></rect>
+                        <rect id="矩形（竖）" stroke="#FF7D00" opacity="0.503762091" x="4.5" y="1.07142857" width="23" height="29.8571429"></rect>
+                        <circle id="圆形" stroke="#FF7D00" opacity="0.503762091" cx="16" cy="16" r="14.9285714"></circle>
+                    </g>
+                    <g id="路径-14备份" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+                <path d="M22.23,11.872 L22.23,10.528 L16.826,10.528 C16.714,10.122 16.588,9.744 16.476,9.408 L14.838,9.688 C14.978,9.94 15.104,10.22 15.23,10.528 L9.756,10.528 L9.756,11.872 L22.23,11.872 Z M20.102,15.414 L20.102,12.446 L11.912,12.446 L11.912,15.414 L20.102,15.414 Z M18.702,14.322 L13.312,14.322 L13.312,13.538 L18.702,13.538 L18.702,14.322 Z M11.73,22.456 L11.73,17.234 L20.27,17.234 L20.27,20.664 C20.27,21 20.018,21.168 19.528,21.168 L18.45,21.126 L18.8,22.414 L19.948,22.414 C21.082,22.414 21.656,21.924 21.656,20.958 L21.656,15.974 L10.344,15.974 L10.344,22.456 L11.73,22.456 Z M18.898,20.818 L18.898,17.794 L13.13,17.794 L13.13,20.818 L18.898,20.818 Z M17.61,19.74 L14.418,19.74 L14.418,18.872 L17.61,18.872 L17.61,19.74 Z" id="高" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

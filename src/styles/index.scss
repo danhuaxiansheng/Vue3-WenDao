@@ -1,0 +1,15 @@
+// 重置样式
+@import "./Common/reset.scss";
+
+// 公用样式
+@import "./Common/common.scss";
+
+// 重置插件样式
+@import "./Common/reset-plug.scss";
+
+// iconfont 字体引入
+@import "./Common/temp.css"; // 此文件为创建占位icon,后续等项目所有图标都配好以后需要删除
+@import "../assets/iconfont/iconfont.css";
+
+// 组件icon样式【主要是searchbar】(后续是否删除根据组件是否可支持自定义icon而定)
+@import "./Common/reset-iconfont.scss";

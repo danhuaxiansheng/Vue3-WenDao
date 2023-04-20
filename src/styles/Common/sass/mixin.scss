@@ -1,0 +1,63 @@
+@mixin cardStyle {
+    background-color: #fff;
+    box-shadow: rgba(145, 158, 171, .2) 0 2px 1px -1px, 
+    rgba(145, 158, 171, .14) 0 1px 1px 0, 
+    rgba(145, 158, 171, .12) 0 1px 3px 0;
+}
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin flexCenter($align:center, $justify:center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin contentLeft($width:30%) {
+    display: inline-block;
+    width: $width;
+    padding: 0 8px;
+    text-align: left;
+    text-transform: capitalize;
+    @include ellipsis;
+}
+
+@mixin contentRight($width:calc(70% - 24px)) {
+    display: inline-block;
+    width: $width;
+    text-align: left;
+}
+
+@mixin border ($borderWidth:1px, $borderType:solid, $borderColor:$lineColor) {
+    border: $borderWidth $borderType $borderColor;
+}
+
+@mixin  cardTitle($height:48px,$fontSize:14px,$color:$btnColor) {
+    width: 100%;
+    height: $height;
+    line-height: $height;
+    font-weight: 700;
+    color: $color;
+    font-size: $fontSize;
+    @include flexCenter($justify:space-between);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 0 24px 0 12px;
+
+    &::before {
+        content: "";
+        width: 4px;
+        height: 16px;
+        background-color: $highColor;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+}

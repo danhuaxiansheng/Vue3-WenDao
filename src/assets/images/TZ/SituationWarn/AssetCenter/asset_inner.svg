@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="45px" viewBox="0 0 50 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>国内资产</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.0720664042%" y1="49.5697872%" x2="99.9280135%" y2="49.5697872%" id="linearGradient-1">
+            <stop stop-color="#2E2E2E" offset="0%"></stop>
+            <stop stop-color="#4C4C4C" offset="30%"></stop>
+            <stop stop-color="#1E1E1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0488484171%" y1="49.1706357%" x2="100.048769%" y2="49.1706357%" id="linearGradient-2">
+            <stop stop-color="#2E2E2E" offset="0%"></stop>
+            <stop stop-color="#4C4C4C" offset="30%"></stop>
+            <stop stop-color="#1E1E1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.0210023%" y1="51.8782731%" x2="57.4244015%" y2="48.0761852%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.33" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.02" offset="40%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.424210526%" y1="49.9269291%" x2="100.424211%" y2="49.9269291%" id="linearGradient-4">
+            <stop stop-color="#2E2E2E" offset="0%"></stop>
+            <stop stop-color="#3F3F3F" offset="29%"></stop>
+            <stop stop-color="#1E1E1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9666667%" y1="-0.00485119048%" x2="49.9666667%" y2="99.9951488%" id="linearGradient-5">
+            <stop stop-color="#4A4A4A" offset="0%"></stop>
+            <stop stop-color="#2A2A2A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9876202%" y1="0.0305208333%" x2="49.9876202%" y2="100.030521%" id="linearGradient-6">
+            <stop stop-color="#3498DB" offset="0%"></stop>
+            <stop stop-color="#1A567F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="56.9931058%" y1="51.9427845%" x2="42.6306605%" y2="47.9993521%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" stop-opacity="0.23" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.02" offset="40%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="问道-资产管理" transform="translate(-814.000000, -1294.000000)" fill-rule="nonzero">
+            <g id="资产拓扑-对话框" transform="translate(252.000000, 939.000000)">
+                <g id="拓扑图1" transform="translate(24.000000, 81.000000)">
+                    <g id="国内资产" transform="translate(538.000000, 275.000000)">
+                        <path d="M10.1619562,40.7007516 L10.1619562,41.8651424 C10.1619562,41.8651424 10.0561025,42.6061183 11.1146396,42.6061183 C13.2317138,42.7648989 18.6831798,43.08246 25.7753784,43.08246 C33.0263576,43.08246 37.4192865,42.8178258 38.9541653,42.7119721 C39.5892876,42.7119721 39.5892876,41.8122155 39.5892876,41.8122155 L39.5892876,40.5948979 C39.5892876,40.5948979 20.3239124,43.08246 10.1619562,40.7007516 Z" id="shape304" fill="url(#linearGradient-1)"></path>
+                        <path d="M22.2292791,39.2187996 C22.2292791,39.2187996 12.3848841,39.3775802 10.2678099,40.5948979 C8.20366254,41.8122155 33.8731873,42.7119721 39.2717265,40.8595321 C40.7536784,40.3302636 36.4136763,39.2187996 22.2292791,39.2187996 Z" id="shape305" fill="url(#linearGradient-2)"></path>
+                        <path d="M22.2292791,39.2187996 C22.2292791,39.2187996 12.3848841,39.3775802 10.2678099,40.5948979 C8.20366254,41.8122155 33.8731873,42.7119721 39.2717265,40.8595321 C40.7536784,40.3302636 36.4136763,39.2187996 22.2292791,39.2187996 Z" id="shape306" fill="url(#linearGradient-3)"></path>
+                        <polygon id="shape307" stroke="#313131" stroke-width="0.529268551" fill="url(#linearGradient-4)" points="22.5468403 34.0848947 27.5748915 34.0848947 27.5748915 40.8066053 22.5468403 40.8066053"></polygon>
+                        <path d="M0.688049116,0 L49.4866095,0 C49.5924632,0 49.6983169,0.10585371 49.6983169,0.21170742 L49.6983169,35.3551392 C49.6983169,35.4609929 49.5924632,35.5668466 49.4866095,35.5668466 L0.688049116,35.5668466 C0.582195406,35.5668466 0.476341696,35.4609929 0.476341696,35.3551392 L0.476341696,0.21170742 C0.476341696,0.10585371 0.582195406,0 0.688049116,0 Z" id="shape308" stroke="#464646" stroke-width="0.529268551" fill="url(#linearGradient-5)"></path>
+                        <polygon id="shape309" stroke="#184B6E" stroke-width="0.529268551" fill="url(#linearGradient-6)" points="3.0697576 2.48756219 47.104901 2.48756219 47.104901 32.9734307 3.0697576 32.9734307"></polygon>
+                        <path d="M27.4690378,39.2187996 C27.4690378,39.2187996 38.2131894,39.430507 39.5363607,40.5948979 C41.3888007,42.1827035 15.8251297,42.7119721 10.4265905,40.8595321 C8.94463851,40.3302636 13.2846406,39.2187996 27.4690378,39.2187996 Z" id="shape310" fill="url(#linearGradient-7)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

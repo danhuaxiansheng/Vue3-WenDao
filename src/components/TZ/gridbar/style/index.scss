@@ -1,0 +1,85 @@
+.page-table {
+  height: 100%;
+  background-color: #fff;
+}
+
+.toolBar {
+  display: flex;
+  justify-content: space-between;
+
+  > .element-tooltar__content {
+    height: 62px;
+    padding: 16px 0;
+  }
+
+  .element-tooltar__left {
+    flex-grow: 1;
+  }
+}
+
+.el-dropdown {
+  vertical-align: middle;
+}
+
+:deep(.el-table) {
+  .el-checkbox {
+    top: -1px;
+  }
+
+  td {
+    padding: 0;
+  }
+
+  th {
+    color: #262626;
+    padding: 4px 0;
+  }
+
+  th:hover {
+    background-color: rgba(26, 115, 232, 0.1);
+  }
+
+  // th .cell:hover {
+  //     cursor: move;
+  // }
+
+  /* 表格间距适中 */
+  td {
+    height: 35px;
+  }
+
+  /* 表格间距宽松 */
+  &.el-table--medium td {
+    height: 38px;
+  }
+
+  /* 表格间距紧凑 */
+  &.el-table--small td {
+    height: 32px;
+  }
+
+  .cell {
+    line-height: 26px;
+
+    .el-button {
+      height: 28px;
+    }
+  }
+
+  svg.icon {
+    width: 24px;
+    height: 24px;
+    display: inherit;
+  }
+}
+
+.el-pagination {
+  margin-top: 8px;
+  text-align: center;
+
+  .discrib {
+    font-size: 12px;
+    line-height: 32px;
+    margin-right: 4px;
+  }
+}
